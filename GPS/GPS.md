@@ -26,8 +26,10 @@ Hệ thống GPS gồm 3 phần chính: Phần không gian (Space segment), Ph�
 #### 1. Phần không gian (Space segment)<a name="cIB1"></a>
 - Gồm ít nhất 24 vệ tinh bay ở độ cao 20.184km, với chu kỳ là 11h58’ (hiện nay có 31 vệ tinh đang hoạt động và 4 vệ tinh dự phòng).
 - Các vệ tinh này nằm trên 6 mặt phẳng quỹ đạo với ít nhất 4 vệ tinh hoạt động trên mỗi mặt phẳng. Các mặt phẳng cách nhau 60 độ về kinh độ và nghiêng 55 độ so với mặt phẳng xích đạo.
-![](img/1.png)
+
+![](img/1.jpg)
 ![](img/2.gif)
+
 ![Quỹ đạo của vệ tinh GPS trên mặt phẳng](mp4/1.mp4)
 #### 2. Phần điều khiển (Control segment)<a name="cIB2"></a>
 Gồm trạm điều khiển chính (Master control station), các trạm giám sát (Monitor stations) và các anten mặt đất (Ground Antennas):
@@ -41,19 +43,23 @@ Là các thiết bị nhận và dùng tín hiệu GPS để định vị như �
 Là phép đo dùng 3 điểm tham chiếu để xác định tọa độ của 1 điểm
 #### 1. Trong không gian 2 chiều<a name="cIIA1"></a>
 - Khi có1 điểm tham chiếu: vị trí của điểm cần tìm (điểm màu đỏ) có thể nằm ở bất cứ đâu trên vòng tròn có tâm là điểm tham chiếu (Point 1), bán kính là khoảng cách giữa 2 điểm đó.
+
 ![](img/3.png)
 
 - Khi có điểm tham chiếu thứ 2: điểm cần tìm sẽ là 1 trong 2 điểm giao nhau của 2 đường tròn.
-![](img/4.png)
+
+![](img/4.jpg)
 
 - Khi có điểm tham chiếu thứ 3: sẽ xác định được vị trí chính xác của điểm cần tìm, là điểm giao nhau của 3 đường tròn.
-![](img/5.png)
+
+![](img/5.jpg)
 
 #### 2. Trong không gian 3 chiều<a name="cIIA2"></a>
 - Hệ thống GPS sử dụng cách trên để định vị một điểm, nhưng khác nhau là trong không gian 3 chiều thay vì 2 chiều, vậy nên đường tròn ở giả thiết trên sẽ trở thành hình cầu.
 - Khi 3 hình cầu giao nhau sẽ có đến 2 vị trí giao, nên GPS sẽ dựa vào khoảng cách của 2 điểm đến tâm Trái Đất để loại đi 1 điểm (điểm nào xa tâm TĐ hơn thì loại).
-![](img/6.png)
-![](img/7.png)
+
+![](img/6.jpg)
+![](img/7.jpg)
 ### B. Làm thế nào để tính khoảng cách từ máy nhận đến vệ tinh?<a name="cIIB"></a>
 #### 1. Công thức tính<a name="cIIB1"></a>
 - Công thức tính: S = V*T
@@ -73,8 +79,10 @@ Là phép đo dùng 3 điểm tham chiếu để xác định tọa độ của 
 	- Giả sử thời gian thực tế tín hiệu truyền đi là 0.07 giây, ta sẽ tính được `S = 299.792.458 * 0.07 = 20.985km & 472m`
 	- Nếu thời gian trên máy thu lệch đi 1 phần triệu giây so với vệ tinh, nghĩa là T = 0.070001 giây, lúc đó `S = 299.792.458 * 0.070001 = 20.985km & 772m`, lệch đi tận 300m so với thực tế.
 - Đây là khi thời gian của 2 đồng hồ giống nhau:
+
 ![](img/8.png)
 - Và đây là khi bị lệch 1 phần triệu giây:
+
 ![](img/9.png)
 - Đó là lý do cần phải sử dụng đến vệ tinh thứ 4 để cải thiện độ chính xác xuống 5m đến 10m.
 - Một số yếu tố khác ảnh hưởng đến độ chính xác của GPS như: bầu khí quyển, phản xạ sóng, vị trí vệ tinh, ephemeris error.
