@@ -1,21 +1,21 @@
 # GPS
 [I. KHÁI NIỆM](#cI)
 
-- [A. GPS là gì?](#cIA)
+[A. GPS là gì?](#cIA)
 
-- [B. Các thành phần của GPS (Structure)](#cIB)
-  - [1. Phần không gian (Space segment)](#cIB1)
-  - [2. Phần điều khiển (Control segment)](#cIB2)
-  - [3. Phần người dùng (User segment)](#cIB3)
+[B. Các thành phần của GPS (Structure)](#cIB)
+1. [Phần không gian (Space segment)](#cIB1)
+2. [Phần điều khiển (Control segment)](#cIB2)
+3. [Phần người dùng (User segment)](#cIB3)
 
 [II. Nguyên lý hoạt động của GPS](#cII)
-- [A. Phép đo tam giác (Trilateration)](#cIIA)
-  - [1. Trong không gian 2 chiều](#cIIA1)
-  - [2. Trong không gian 3 chiều](#cIIA2)
+[A. Phép đo tam giác (Trilateration)](#cIIA)
+1. [Trong không gian 2 chiều](#cIIA1)
+2. [Trong không gian 3 chiều](#cIIA2)
 
-- [B. Làm thế nào để tính khoảng cách từ máy nhận đến vệ tinh?](#cIIB)
-  - [1. Công thức tính](#cIIB1)
-  - [2. Sai số](#cIIB2)
+[B. Làm thế nào để tính khoảng cách từ máy nhận đến vệ tinh?](#cIIB)
+1. [Công thức tính](#cIIB1)
+2. [Sai số](#cIIB2)
 ## I. KHÁI NIỆM<a name="cI"></a>
 ### A. GPS là gì?<a name="cIA"></a>
 - GPS là viết tắt của Global Positioning System, hay Hệ thống định vị toàn cầu, là một hệ thống định vô tuyến dựa trên vệ tinh, được phát triển và vận hành bởi chính phủ Mỹ.
